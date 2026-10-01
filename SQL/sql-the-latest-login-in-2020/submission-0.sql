@@ -1,0 +1,5 @@
+-- Write your query below
+SELECT user_id, MAX(time_stamp) as last_stamp
+FROM logins l
+WHERE time_stamp < '2021-01-01 00:00:00' and time_stamp >= '2020-01-01 00:00:00'
+GROUP BY user_id
